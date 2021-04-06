@@ -10,4 +10,18 @@ Use [pipenv](https://pypi.org/project/pipenv/) package manager to install all re
 pipenv update
 ```
 
+Activate virtual environment:
+
+```bash
+pipenv shell
+```
+
+Also MySQL for database required. Set all options for database by settings.py file in DATABASE section.
+settings.py location is config folder.
+After all DATABASE settings done run the following command
+
+```bash
+python manage.py migrate
+```
+
 DEBAG = True
